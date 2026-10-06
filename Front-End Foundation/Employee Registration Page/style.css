@@ -1,0 +1,152 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  background-color: #f4f7fb;
+  font-family: Arial, sans-serif;
+}
+
+header{
+  padding: 20px;
+  background-color: #1a4871;
+  color: white;
+}
+nav{
+  display: flex;
+  gap: 20px;
+  padding: 15px 20px;
+  position: relative;
+  left: 890px;
+  bottom: 80px;
+}
+ .h2{
+  position: relative;
+  bottom: 40px;
+ }
+ h3{
+  position: relative;
+  bottom: 10px;
+ }
+ .p{
+  position: relative;
+  bottom: 35px;
+ }
+main{
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+form{
+  background-color: white;
+  border-top: 5px solid #0d2f4f;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0,0.1);
+  
+}
+form .rid{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.rid label{
+ position: relative;
+ bottom: 10px;
+ right: 15px;
+}
+.rid label:hover{
+  border: 2px solid #0d2f4f;
+  height: 20px;
+}
+ form input,form select,form textarea{
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 15px;
+ }
+
+ form button{
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-right: 10px;
+ }
+ form button[type="submit"]{
+  background-color: #1f4e79;
+  color: white;
+ }
+ form button[type="reset"]{
+  background-color: #e5e7eb;
+  color: #333;
+ }
+  input[type="radio"],
+ input[type="checkbox"]{
+  width: 20px;
+  
+ }
+ 
+ .rid{
+  display: grid;
+  grid-auto-flow: column;
+ }
+ table{
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px;
+ }
+ table th,table td{
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+ }
+ table th{
+  background-color: #1f4e79;
+  color: white;
+  padding: 12px
+ }
+ table td{
+  padding: 12px;
+ }
+ table tbody tr:hover{
+  background-color: #f1f5f9;
+ }
+ nav a{
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+ }
+ nav a:hover{
+  color: #0d2f4f;
+ }
+
+ form input:focus,
+ form input:focus,
+ form input:focus{
+  outline: none;
+  border-color: #1f4e79;
+ }
+ form button:hover{
+  opacity: 0.85;
+ }
+ @media(max-width: 600px){
+  main{
+    padding: 0 10px;
+  }
+  form{
+    padding: 15px;
+  }
+  table{
+    font-size: 14px;
+  }
+ }
+ footer{
+  text-align: center;
+  padding: 20px;
+  margin-top:30px;
+  color:#666;
+ }

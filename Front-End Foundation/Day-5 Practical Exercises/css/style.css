@@ -1,0 +1,11 @@
+.employee-card {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 8px;
+}
+
+.deleteBtn {
+    padding: 8px 15px;
+    cursor: pointer;
+}
