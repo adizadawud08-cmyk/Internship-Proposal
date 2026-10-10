@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StyleFind - Product Explorer</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1>StyleFind</h1>
+        <p>Find a style you like.</p>
+    </header>
+
+    <main>
+        <section class="controls">
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search products..."
+                aria-label="Search products"
+            >
+
+            <select id="categoryFilter" aria-label="Filter by category">
+                <option value="all">All Categories</option>
+            </select>
+
+            <select id="priceSort" aria-label="Sort products by price">
+                <option value="default">Default Order</option>
+                <option value="low-high">Price: Low to High</option>
+                <option value="high-low">Price: High to Low</option>
+            </select>
+        </section>
+
+        <section class="products-section">
+            <h2>Products</h2>
+
+            <p id="loadingMessage">Loading products...</p>
+
+            <p id="errorMessage" hidden>
+                Something went wrong.
+                <button id="retryButton" type="button">Retry</button>
+            </p>
+
+            <p id="emptyMessage" hidden>No products found.</p>
+
+            <div id="productList"></div>
+        </section>
+
+        <section class="favourites-section">
+            <h2>My Favourites</h2>
+            <div id="favouritesList"></div>
+        </section>
+    </main>
+
+    <div id="productModal" class="modal" hidden>
+        <div class="modal-content">
+            <button id="closeModal" type="button">Close</button>
+            <div id="productDetails"></div>
+        </div>
+    </div>
+
+    <script src="../javaScript/api.js"></script>
+    <script src="../javaScript/storage.js"></script>
+    <script src="../javaScript/Ui.js"></script>
+    <script src="../javaScript/appp.js"></script>
+</body>
+</html>
